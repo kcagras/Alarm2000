@@ -12,6 +12,7 @@
     <ImageView
         android:layout_width="216dp"
         android:layout_height="78dp"
+        android:layout_marginLeft="-70dp"
         android:src="@drawable/warning"
         android:id="@+id/imageView"
         android:layout_gravity="left"
