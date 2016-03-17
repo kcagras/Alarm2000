@@ -9,10 +9,29 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:showIn="@layout/app_bar_main"
     tools:context=".MainActivity">
 
+    <WebView
+        android:id="@+id/livecam_webview"
+        android:layout_width="356dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp">
+    </WebView>
+
     <TextView
-        android:text="Livecam"
+        android:id="@+id/livecam_gallery"
+        android:text="Gallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="50dp"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:layout_below="@id/livecam_webview"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Foto"
+        android:layout_below="@id/livecam_gallery"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>
