@@ -9,15 +9,15 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark" android:orientation="vertical"
     android:gravity="bottom">
 
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@android:drawable/sym_def_app_icon" android:id="@+id/imageView" />
+    <ImageView
+        android:layout_width="216dp"
+        android:layout_height="78dp"
+        android:src="@drawable/warning"
+        android:id="@+id/imageView"
+        android:layout_gravity="left"
+        />
 
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing" android:text="Android Studio"
+        android:paddingTop="@dimen/nav_header_vertical_spacing" android:text="Praxisprojekt Alarm 2000"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="android.studio@android.com" android:id="@+id/textView" />
-
 </LinearLayout>
