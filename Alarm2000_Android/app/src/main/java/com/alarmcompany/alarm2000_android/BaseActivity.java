@@ -1,5 +1,6 @@
 package com.alarmcompany.alarm2000_android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -10,7 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity
+public abstract class BaseActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
@@ -68,12 +69,20 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camara) {
-            // Handle the camera action
+        if (id == R.id.nav_camera) {
+            Intent intent = new Intent (this, LiveActivity.class);
+            startActivity(intent);
+            finish();
         }
-        else if (id == R.id.nav_gallery) {
+        else if (id == R.id.nav_archiv) {
+            Intent intent = new Intent (this, LiveActivity.class);
+            startActivity(intent);
+            finish();
         }
-        else if (id == R.id.nav_manage) {
+        else if (id == R.id.nav_settings) {
+            Intent intent = new Intent (this, SettingsActivity.class);
+            startActivity(intent);
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
