@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Alarm2000</string>
+    <string name="app_name">Housebreak Fucker 2000</string>
+    <string name="pin_activity_bar"></string>
+    <string name="settings_activity_bar">Settings</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
