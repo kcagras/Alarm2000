@@ -35,11 +35,18 @@
         tools:showIn="@layout/app_bar_main"
         tools:context=".MainActivity">
 
+        <Button
+            android:id="@+id/enablebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
         <WebView
             android:id="@+id/livecam_webview"
             android:layout_width="match_parent"
             android:layout_height="220dp"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="60dp">
         </WebView>
 
         <Gallery
@@ -50,13 +57,13 @@
             android:textSize="50dp"
             android:layout_centerInParent="true"
             android:layout_below="@id/livecam_webview"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:background="@android:color/holo_blue_light"/>
 
         <Button
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="Foto"
             android:layout_below="@id/livecam_gallery"
             android:layout_centerHorizontal="true"/>

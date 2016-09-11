@@ -5,13 +5,11 @@
         <EditTextPreference
             android:key="stg_key_ip"
             android:title="IP-Adresse des Servers:"
-            android:summary="0.0.0.0"
             android:defaultValue="0.0.0.0"/>
         <EditTextPreference
             android:key="stg_key_port"
             android:title="Portnummer des Servers"
-            android:defaultValue="0.0.0.0"
-            android:summary="8080"/>
+            android:defaultValue="8080"/>
     </PreferenceCategory>
     <PreferenceCategory
         android:title="Allgemein">
@@ -26,10 +24,6 @@
             android:key="stg_key_ringtone"
             android:title="Klingelton bei Einbruch"
             android:summary="Alarm"/>
-        <EditTextPreference
-            android:key="stg_key_captureseconds"
-            android:title="Aufnahmedauer nach Einbruch"
-            android:summary="00:30 min"/>
     </PreferenceCategory>
     <PreferenceCategory
         android:title="NFC">
